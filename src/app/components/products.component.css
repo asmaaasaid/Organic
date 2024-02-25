@@ -1,0 +1,16 @@
+.product-section
+{
+    background-color:#f5f5f5;
+}
+.card
+{
+    height:50vh !important;
+    box-shadow:2px 2px 5px gray;
+}
+.card img{
+    height:55%;
+}
+.badge
+{
+    width:50% !important;
+}

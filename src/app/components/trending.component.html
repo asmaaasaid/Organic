@@ -1,0 +1,26 @@
+<section class="py-5 trending-section">
+    <div class="d-flex justify-content-center flex-column align-items-center my-2">
+        <h4 class="text-capitalize">trending products</h4>
+        <img src="../../assets/organic-img/logo-leaf-new.png" class="img-product" />
+    </div>
+    <section class="container my-5">
+        <div class="row gy-3">
+            <div class="col-lg-3" *ngFor="let trend of trendingList ">
+                <div class="card border-0 " >
+                    <img [src]="trend.image" alt="...">
+                    <div class="card-body d-flex justify-content-center flex-column align-items-center">
+                      <h6 class="text-capitalize">{{trend.trendItem}}</h6>
+                      <h5 class="card-title text-capitalize text-center">{{trend.trendTitle}}</h5>
+                      <div>
+                        <ng-container *ngFor="let icon of iconsArray">
+                          <i *ngFor="let _ of [].constructor(icon === 'fa-solid fa-star' ? 4 : 1); let i=index" class="{{ icon }}"></i>
+                        </ng-container>
+                      </div>
+                      <h6> <span class="badge bg-secondary my-2">{{trend.trendPrice}}</span></h6>
+                    </div>
+                  </div>
+            </div>
+           
+        </div>
+    </section>
+</section>

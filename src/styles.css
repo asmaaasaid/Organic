@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+.button ,.buttonSlide{
+    background-color:#8bc34a !important;
+    color:whiteSmoke !important;
+}
+.img-product
+{
+    width:10% !important;
+}
+body
+{
+    font-family: "Merriweather", serif;
+}
+.buttonSlide
+{
+    width:5% !important;
+}
